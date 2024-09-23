@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import diagImage from '../assets/diag.jpg'; 
-import mernImage from '../assets/Mern.jpg'; 
+import mernImage from '../assets/mern.jpg'; 
 import storeImage from '../assets/store.jpeg'; 
 import learningImage from '../assets/learning-m.png';
 import javaOOPImage from '../assets/JavaOOP.jpg'; 
