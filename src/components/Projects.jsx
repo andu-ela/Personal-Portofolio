@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { FaGithub, FaCode, FaPalette, FaDesktop } from 'react-icons/fa';
-import diagImage from '../assets/diag.jpg'; // Imzahi për Vehicle Store
-import mernImage from '../assets/Mern.jpg'; // Imzahi për To Do List
-import storeImage from '../assets/store.jpeg'; // Imzahi për Vehicle Shop
-import learningImage from '../assets/learning-m.png'; // Imzahi për Learning Management System
-import javaOOPImage from '../assets/JavaOOP.jpg'; // Imzahi për Restaurant App
-import threeTierImage from '../assets/ThreeRestaurant.jpg'; // Imzahi për Three-Tier Restaurant Operations
+import { FaGithub } from 'react-icons/fa';
+import diagImage from '../assets/diag.jpg'; 
+import mernImage from '../assets/Mern.jpg'; 
+import storeImage from '../assets/store.jpeg'; 
+import learningImage from '../assets/learning-m.png';
+import javaOOPImage from '../assets/JavaOOP.jpg'; 
+import threeTierImage from '../assets/ThreeRestaurant.jpg'; 
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('myProjects');
@@ -57,26 +57,8 @@ const Projects = () => {
       title: "Three-Tier Restaurant Operations",
       image: threeTierImage,
       description: "An application designed for managing restaurant operations in a three-tier architecture.",
-      tech: "Java OOP (View) ",
+      tech: "Java OOP (View)",
       github: "https://github.com/andu-ela/Restaurant-Point-of-Sale-App"
-    }
-  ];
-
-  const services = [
-    {
-      title: "Full Stack Development",
-      description: "Building complete web applications from the ground up.",
-      icon: <FaCode size={50} className="text-white" />
-    },
-    {
-      title: "UI/UX Design",
-      description: "Creating user-friendly designs for an optimal user experience.",
-      icon: <FaPalette size={50} className="text-white" />
-    },
-    {
-      title: "Frontend Development",
-      description: "Developing the client-side of applications with modern frameworks.",
-      icon: <FaDesktop size={50} className="text-white" />
     }
   ];
 
@@ -98,7 +80,7 @@ const Projects = () => {
         >
           My Services
         </button>
-        {/* Vija poshtë */}
+        {/* Indicator */}
         <div
           className={`absolute bottom-0 left-0 h-1 transition-all ${activeTab === 'myProjects' ? 'bg-cyan-400' : 'bg-cyan-400'}`}
           style={{ width: '50%', left: activeTab === 'myProjects' ? '0%' : '50%', transition: 'left 0.3s, width 0.3s' }}
@@ -118,34 +100,34 @@ const Projects = () => {
               <img 
                 src={project.image} 
                 alt={project.title}
-                className={`rounded transition duration-300 ${showDetails === project.id ? 'blur-md' : ''} h-48`} 
+                className={`project-image rounded transition duration-300 ${showDetails === project.id ? 'blur-md' : ''}`} 
               />
-             {showDetails === project.id && (
-  <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 bg-opacity-90 text-white rounded p-3">
-    <h3 className="text-xl font-semibold">{project.title}</h3> {/* Ndrysho 'text-2xl' në 'text-xl' */}
-    <p className="mt-2 text-center">{project.description}</p>
-    <div className="mt-4">
-      <span className="text-cyan-400">{project.tech}</span>
-    </div>
-    <hr className="border-gray-600 my-2 w-full" />
-    <div className="flex justify-center">
-      <a 
-        href={project.github} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="text-white hover:text-gray-400"
-      >
-        <FaGithub size={30} />
-      </a>
-    </div>
-  </div>
-)}
-
+              {showDetails === project.id && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 bg-opacity-90 text-white rounded p-3">
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <p className="mt-2 text-center">{project.description}</p>
+                  <div className="mt-4">
+                    <span className="text-cyan-400">{project.tech}</span>
+                  </div>
+                  <hr className="border-gray-600 my-2 w-full" />
+                  <div className="flex justify-center">
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-white hover:text-gray-400"
+                    >
+                      <FaGithub size={30} />
+                    </a>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Shtoni shërbimet tuaja këtu */}
           {services.map((service, index) => (
             <div key={index} className="relative border rounded-lg p-6 bg-gray-800 text-white transition-shadow hover:shadow-lg overflow-hidden">
               <div className="flex items-center mb-4">

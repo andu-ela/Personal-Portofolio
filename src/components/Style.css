@@ -1,0 +1,75 @@
+/* styles.css */
+
+/* Stilet bazë */
+.section {
+    padding: 2rem;
+  }
+  
+  /* Përshtat për telefonat mobilë */
+  @media (max-width: 640px) {
+    .about-container {
+      flex-direction: column; /* Rreshto në kolona */
+      align-items: center; /* Qendro në qendër */
+    }
+    .about-image {
+      width: 80%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .about-text {
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .contact-form {
+      width: 90%;
+      padding: 1rem;
+    }
+  }
+  
+  /* Përshtat për tabletë dhe laptopë */
+  @media (min-width: 641px) {
+    .about-container {
+      flex-direction: row; /* Rreshto në rreshta */
+    }
+    .about-image {
+      width: 50%;
+    }
+    .about-text {
+      width: 50%;
+    }
+    .contact-form {
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .h-60 {
+      height: 250px; /* Ndrysho sipas nevojës */
+    }
+    .w-60 {
+      width: 250px; /* Ndrysho sipas nevojës */
+    }
+  }
+  
+
+/* Project image styles */
+.project-image {
+  width: 100%; /* Ensure the image takes up the full width */
+  height: auto; /* Maintain aspect ratio */
+}
+.project-image {
+  width: 100%; /* Bëni imazhin të zërë të gjithë hapësirën e disponueshme */
+  height: 200px; /* Vendosni një lartësi të fikstë */
+  object-fit: cover; /* Sigurohuni që imazhi të plotësojë kutinë pa deformuar proporcionet */
+}
+
+
+/* Adjustments for mobile devices */
+@media (max-width: 640px) {
+  .project-image {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+  

@@ -21,7 +21,6 @@ const Skills = () => {
           <FaNodeJs className="text-6xl text-white transition-colors duration-300 hover:text-cyan-400 mb-2" />
           <h3 className="text-lg font-semibold text-white">Node.js</h3>
         </div>
-        {/* Skill 3: HTML5 */}
         <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg bg-gray-800">
           <FaHtml5 className="text-6xl text-white transition-colors duration-300 hover:text-cyan-400 mb-2" />
           <h3 className="text-lg font-semibold text-white">HTML5</h3>

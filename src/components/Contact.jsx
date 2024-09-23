@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2'; // Import SweetAlert2
+import './Style.css'; // Importo stilin
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -8,9 +9,8 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-
+    
     const formData = new FormData(event.target);
-    formData.append("access_key", "f388efb2-af9d-4b92-863b-36cfe06967f6");
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
@@ -37,26 +37,23 @@ const Contact = () => {
       }).then((res) => res.json());
 
       if (res.success) {
-        // Show success message after sending
         Swal.fire({
           title: 'Success!',
           text: 'Your message was sent successfully!',
           icon: 'success',
-          timer: 3000, // Close automatically after 3 seconds
+          timer: 3000,
           showConfirmButton: false
         });
       } else {
-        // Show error message in case of failure
         Swal.fire({
           title: 'Error!',
           text: 'Message sending failed!',
           icon: 'error',
-          timer: 3000, // Close automatically after 3 seconds
+          timer: 3000,
           showConfirmButton: false
         });
       }
     } catch (error) {
-      // Display error message in case of a request failure
       Swal.fire({
         title: 'Error!',
         text: 'An error occurred! Please try again.',
@@ -66,7 +63,6 @@ const Contact = () => {
       });
     }
 
-    // Clear the fields after sending the message
     setName('');
     setEmail('');
     setMessage('');
@@ -76,7 +72,7 @@ const Contact = () => {
     <div className="flex flex-col items-center justify-center min-h-screen p-8">
       <h2 className="text-3xl font-bold mb-2">Contact Me</h2>
       <p className="text-xl text-cyan-400 mb-6">Let's work together!</p> 
-      <form onSubmit={onSubmit} className="flex flex-col space-y-4 w-full max-w-md">
+      <form onSubmit={onSubmit} className="contact-form flex flex-col space-y-4 w-full max-w-md">
         <input 
           type="text" 
           placeholder="Full Name" 
