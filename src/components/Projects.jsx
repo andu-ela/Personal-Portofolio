@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLaptopCode, FaCode, FaPalette, FaMobileAlt } from 'react-icons/fa';
 import diagImage from '../assets/diag.jpg'; 
 import mernImage from '../assets/mern.jpg'; 
 import storeImage from '../assets/store.jpeg'; 
@@ -60,6 +60,34 @@ const Projects = () => {
       tech: "Java OOP (View)",
       github: "https://github.com/andu-ela/Restaurant-Point-of-Sale-App"
     }
+  ];
+
+  const services = [
+    {
+      title: "Full Stack Development",
+      description: "Building end-to-end solutions for web applications.",
+      icon: <FaLaptopCode size={30} />,
+    },
+    {
+      title: "Frontend Development",
+      description: "Creating visually appealing and user-friendly interfaces.",
+      icon: <FaPalette size={30} />,
+    },
+    {
+      title: "Web Development",
+      description: "Creating responsive and visually appealing websites.",
+      icon: <FaCode size={30} />,
+    },
+    {
+      title: "UI/UX Design",
+      description: "Designing user-friendly interfaces and experiences.",
+      icon: <FaPalette size={30} />,
+    },
+    {
+      title: "Software Development",
+      description: "Developing customized software solutions for various needs.",
+      icon: <FaMobileAlt size={30} />,
+    },
   ];
 
   return (
@@ -127,7 +155,6 @@ const Projects = () => {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Shtoni shërbimet tuaja këtu */}
           {services.map((service, index) => (
             <div key={index} className="relative border rounded-lg p-6 bg-gray-800 text-white transition-shadow hover:shadow-lg overflow-hidden">
               <div className="flex items-center mb-4">
