@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-       "start": "vite",
+    "start": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -27,7 +27,7 @@
     "react-spring": "^9.7.4",
     "react-tabs": "^6.0.2",
     "styled-components": "^6.1.13",
-    "sweetalert2": "^11.14.1",
+    "sweetalert2": "^11.6.13",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

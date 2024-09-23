@@ -12,8 +12,12 @@ const Contact = () => {
     
     const formData = new FormData(event.target);
     const object = Object.fromEntries(formData);
+    
+    // Shto çelësin e aksesit
+    object.access_key = 'f388efb2-af9d-4b92-863b-36cfe06967f6';
+    
     const json = JSON.stringify(object);
-
+  
     // Display a message indicating the message is being sent
     Swal.fire({
       title: 'Sending...',
@@ -25,7 +29,7 @@ const Contact = () => {
         Swal.showLoading(); // Display loading spinner
       }
     });
-
+  
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -35,7 +39,7 @@ const Contact = () => {
         },
         body: json
       }).then((res) => res.json());
-
+  
       if (res.success) {
         Swal.fire({
           title: 'Success!',
@@ -62,11 +66,12 @@ const Contact = () => {
         showConfirmButton: false
       });
     }
-
+  
     setName('');
     setEmail('');
     setMessage('');
   };
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8">
