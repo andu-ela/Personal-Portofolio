@@ -55,14 +55,15 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="relative w-80 h-80 sm:w-96 sm:h-96 mt-8 sm:mt-0">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-400 to-blue-500 opacity-50 blur-3xl"></div>
-                <img 
-                  src={profileImage} 
-                  alt="Profile" 
-                  className="relative z-10 w-full h-full object-cover rounded-full border-8 border-gray-800 shadow-[0_0_100px_rgba(0,255,255,0.6)]" 
-                />
-              </div>
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96 mt-8 sm:mt-0 md:ml-16 lg:ml-32">
+  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-400 to-blue-500 opacity-50 blur-3xl"></div>
+  <img 
+    src={profileImage} 
+    alt="Profile" 
+    className="relative z-10 w-full h-full object-cover rounded-full border-8 border-gray-800 shadow-[0_0_100px_rgba(0,255,255,0.6)]" 
+  />
+</div>
+
             </section>
           </div>
         )}
