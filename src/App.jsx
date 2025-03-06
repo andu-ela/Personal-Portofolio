@@ -22,9 +22,9 @@ function App() {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
                   Hello, I'm <br /><span className="text-cyan-400">Anduela Nurshaba</span>
                 </h1>
-                <h2 className="text-2xl font-semibold text-gray-400">Full Stack Developer</h2>
+                <h2 className="text-2xl font-semibold text-gray-400">Full Stack Web Developer</h2>
                 <p className="text-lg text-gray-300 max-w-md mx-auto md:mx-0">
-                  I specialize in creating visually stunning and fully responsive web applications with modern technologies like React, Tailwind CSS, and JavaScript.
+                  I specialize in creating visually stunning and fully responsive web applications with modern technologies like React, Bootstrap, Tailwind CSS, NodeJS and JavaScript.
                 </p>
                 <div className="flex justify-center md:justify-start items-center space-x-6">
                   <a 

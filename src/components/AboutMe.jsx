@@ -14,16 +14,14 @@ const AboutMe = () => {
             className="relative z-10 w-full h-full object-cover rounded-full border-8 border-gray-800 shadow-[0_0_100px_rgba(0,255,255,0.6)]"
           />
         </div>
-
-        {/* Teksti në anën e djathtë */}
         <div className="about-text flex flex-col space-y-4 text-left w-full md:w-1/2 p-8">
           <h1 className="text-6xl font-extrabold text-white">About Me</h1>
-          <h2 className="text-2xl font-semibold text-gray-400">Full Stack Developer</h2>
+          <h2 className="text-2xl font-semibold text-gray-400">Full Stack Web Developer</h2>
           <p className="text-lg text-gray-300">
-            I specialize in creating visually stunning and fully responsive web applications with modern technologies like React, Tailwind CSS, and JavaScript.
+            I specialize in creating visually stunning and fully responsive web applications with modern technologies like React, Bootstrap, Node, Tailwind CSS, and JavaScript.
           </p>
           <p className="text-lg text-gray-300">
-            Step into a world where technology meets creativity. As a Full Stack Developer, I transform complex ideas into digital solutions that captivate and inspire.
+            Step into a world where technology meets creativity. As a Full Stack Web Developer, I transform complex ideas into digital solutions that captivate and inspire.
           </p>
           <p className="text-lg text-gray-300">
             I specialize in building secure and scalable systems with a focus on delivering seamless, user-friendly experiences.

@@ -3,7 +3,7 @@ import {
   FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaGitAlt
 } from 'react-icons/fa'; 
 import {
-  SiTailwindcss, SiExpress, SiJquery, SiMongodb, SiMysql, SiJson
+  SiTailwindcss, SiExpress, SiJquery, SiMongodb, SiMysql, SiJson, SiBootstrap
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -15,6 +15,10 @@ const Skills = () => {
         <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg bg-gray-800">
           <FaReact className="text-6xl text-white transition-colors duration-300 hover:text-cyan-400 mb-2" />
           <h3 className="text-lg font-semibold text-white">React</h3>
+        </div>
+        <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg bg-gray-800">
+          <SiBootstrap className="text-6xl text-white transition-colors duration-300 hover:text-cyan-400 mb-2" />
+          <h3 className="text-lg font-semibold text-white">Bootstrap</h3>
         </div>
         {/* Skill 2: Node.js */}
         <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg bg-gray-800">
